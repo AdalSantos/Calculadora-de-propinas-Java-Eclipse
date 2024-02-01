@@ -1,15 +1,13 @@
 package EDPropinas;
 
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.JTextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.Color;
-
+////////////////////////////////////////////////////////
 public class CalculadoraPropinas {
 
     private JFrame frame;
@@ -26,7 +24,7 @@ public class CalculadoraPropinas {
             e.printStackTrace();
         }
     }
-
+///////////////////////////////////////////////////////////
     public CalculadoraPropinas() {
         initialize();
     }
@@ -94,13 +92,14 @@ public class CalculadoraPropinas {
         btnReiniciar.setBounds(10, 184, 89, 23);
         frame.getContentPane().add(btnReiniciar);
     }
-
+/////////////////////////////////////////////////////////////////////////////
+    //operaciones a realizar para calcular la propina junto al porcentaje.
     private void calcularPropina() {
         try {
             double total = Double.parseDouble(totalTextField.getText());
             double porcentaje = Double.parseDouble(porcentajeTextField.getText());
 
-            double propina = (total * porcentaje) / 100;
+            double propina = (total * porcentaje) / 100; 
             double totalPagar = total + propina;
 
             propinaTextField.setText(String.format("%.2f", propina));
@@ -110,7 +109,8 @@ public class CalculadoraPropinas {
             totalPagarTextField.setText("Error");
         }
     }
-
+///////////////////////////////////////////////////////////////////////////////
+    //Boton de reinicio.
     private void reiniciar() {
         totalTextField.setText("");
         porcentajeTextField.setText("");
