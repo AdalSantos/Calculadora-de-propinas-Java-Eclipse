@@ -1,1 +1,1 @@
-
+Con este programa buscamos hacer una calculador que poniendo el total y añadiendo un porcentaje del total nos de como resultado la cantidad de propina a pagar y el total. Además de añadir un boton de reiniciar en caso de equivocación y no tener que estar borrando todo de uno en uno.
